@@ -2,7 +2,9 @@ services:
   svg-to-favicon:
     build:
       context: .
+      dockerfile: Dockerfile
     volumes:
       - ./input:/app/input
       - ./output:/app/output
-    entrypoint: ["/app/convert.sh"]
+    working_dir: /app
+    entrypoint: ["/bin/sh", "-c", "sh /app/convert.sh"]
