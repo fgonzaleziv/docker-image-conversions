@@ -8,19 +8,7 @@ This project provides a Dockerized solution for converting SVG files into multip
 docker-compose.yml
 Dockerfile
 input/
-    input.svg
-    two.svg
 output/
-    input/
-        input-16x16.png
-        input-32x32.png
-        input-48x48.png
-        input.ico
-    two/
-        two-16x16.png
-        two-32x32.png
-        two-48x48.png
-        two.ico
 script/
     convert.sh
 ```
