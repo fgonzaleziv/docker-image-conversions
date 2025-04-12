@@ -1,0 +1,8 @@
+services:
+  svg-to-favicon:
+    build:
+      context: .
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    entrypoint: ["/app/convert.sh"]
