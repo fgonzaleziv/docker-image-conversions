@@ -7,4 +7,3 @@ services:
       - ./input:/app/input
       - ./output:/app/output
     working_dir: /app
-    entrypoint: ["/bin/sh", "-c", "sh /app/convert.sh"]

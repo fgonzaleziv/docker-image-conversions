@@ -22,11 +22,13 @@ script/
 ## Usage
 
 ### Build the Docker Image
+
 ```bash
 docker build -t svg-converter .
 ```
 
 ### Run the Conversion
+
 ```bash
 docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output svg-converter
 ```
@@ -36,11 +38,13 @@ docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output svg-conv
 You can also use `docker-compose` to simplify the process:
 
 #### Build and Run
+
 ```bash
 docker-compose up --build
 ```
 
 #### Stop the Containers
+
 ```bash
 docker-compose down
 ```

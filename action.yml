@@ -1,0 +1,24 @@
+name: "SVG Converter"
+description: "A GitHub Action to convert SVG files into multiple image formats and sizes using Docker."
+author: "fgonzaleziv"
+
+inputs:
+  input-directory:
+    description: "Path to the input directory containing SVG files."
+    required: true
+    default: "input"
+  output-directory:
+    description: "Path to the output directory for converted images."
+    required: true
+    default: "output"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - "${{ inputs.input-directory }}"
+    - "${{ inputs.output-directory }}"
+
+branding:
+  icon: "package"
+  color: "blue"

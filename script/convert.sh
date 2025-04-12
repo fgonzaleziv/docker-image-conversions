@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Debugging: Print current directory and list files
 echo "Current directory: $(pwd)"
